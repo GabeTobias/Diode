@@ -35,7 +35,7 @@ cmake ..
 
 ## Authors
 
-* **Gabriel Tobias** - *Initial work* - [notshriram](https://github.com/GabeTobias)
+* **Gabriel Tobias** - *Initial work* - [GabeTobias](https://github.com/GabeTobias)
 
 ## License
 
