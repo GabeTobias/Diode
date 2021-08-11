@@ -12,10 +12,10 @@ git clone --recursive https://github.com/GabeTobias/Diode
 
 ### Prerequisites
 
-GLM
-GLFW
-CMake <br> 
-Visual Studio
+- GLM <br>
+- GLFW <br>
+- CMake <br>
+- Visual Studio
 
 ## Authors
 
