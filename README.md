@@ -3,6 +3,8 @@
 # Diode
 Diode is a top down shooter about emergent enemy behaviour. It is written in c++ with a simplistic 2D renderer in opengl. It is single player has one massive world similar to a metroidvania and includes an in-game editor suite to allow for level creation.
 
+![Alt Text](Hero.gif)
+
 ## Getting Started
 to clone this project it is *NECESSARY* to use the `--recursive` flag
 
