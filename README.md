@@ -10,8 +10,7 @@ to clone this project it is *NECESSARY* to use the `--recursive` flag
 git clone --recursive https://github.com/GabeTobias/Diode
 ```
 
-### Prerequisites
-
+### Dependencies
 - GLM <br>
 - GLFW <br>
 - CMake <br>
