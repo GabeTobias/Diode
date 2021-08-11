@@ -1,0 +1,65 @@
++ Shield Pickup
++ Missile Unlock (Maybe Regenerate / Maybe pickup Ammo)
++ Lazer Unlock   (Maybe Regenerate / Maybe pickup Ammo)
++ Emp Unlock
++ Placeable Walls Unlock
++ Placeable Walls (immovable)
++ Dash to do damage
++ Charged Damage Dodge
++ Shock pads that instead shock after standing still for too long
++ Simple Turret that shoots out shock pads near player (Kinda like floating bombs)
++ Lock Component (Child Component finds parent onStart and notifies parent on delete)
++ Checkpoints only activatable if room is empty of enemies
++ Collectable energy to unlock doors and turn on machines
++ Speedways that push the player in selected directions
++ Machines that Move large structures back and forth imitates machinery
++ Spikes & Magnet Zones (To Emulate Gravity)
++ Turret that shoots in fixed direction
++ Controllable turret, maybe like a giant lazer you can take control of
+- World Map
+- Missiles need pathfinding
+
+TAG SYSTEM REFERENCES:
+- Player Missiles
+- Room Management
+- Shocked Behaviour
+
+COMPLETED:
+Basic Renderer
+Entity | Component | World
+Basic Movement
+Tilemap System
+Collision System
+Room System
+Basic Editor
+Serialization
+Camera
+Bullets
+Damage System
+Gamepad Support
+Turret (Relies on Missiles)
+Sliding Turret
+Bomb Trap
+On/Off Laser Beam
+Player Dash Limit
+Player UI
+Player Checkpoints
+Heat Seeking Missiles
+Breakable Doors
+Triggerable Walls (PressurePlates/Timers)
+Movable drift flag (This is still not perfect but good enough)
+Drone
+Hive Mound (Drift Metal | Spawn by distance to spawn point)
+Health Pickups
+Energy Shields
+Emp Abillity (Destroys Shields)
+Freeze movement & Damage region (Flips on if standing on pad too long)
+Region Trigger Component
+Get Current Room
+Room Reload
+Editor Scene state
+Simple Djikstra Pathfinding
+Room API Improvments
+Advanced Drone Path Finding
+Charge up and takle drone
+Timed Lazer drone (Welder)
