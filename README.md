@@ -14,7 +14,6 @@ git clone --recursive https://github.com/GabeTobias/Diode
 - GLM <br>
 - GLFW <br>
 - CMake <br>
-- Visual Studio
 
 ## Authors
 
