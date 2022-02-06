@@ -17,10 +17,5 @@ git clone --recursive https://github.com/GabeTobias/Diode
 - GLFW <br>
 - CMake <br>
 
-## Authors
-
-* **Gabriel Tobias** - *Initial work* - [GabeTobias](https://github.com/GabeTobias)
-
 ## License
-
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
