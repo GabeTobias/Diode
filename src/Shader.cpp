@@ -1,4 +1,5 @@
 #include "Shader.h"
+#include "Log.h"
 
 #include <GL/glew.h>
 
@@ -29,7 +30,7 @@ void Shader::load(std::string frag, std::string vert)
 		std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
 	}
 
-	printf("Loaded Shader %s & %s \n", frag.c_str(), vert.c_str());
+	LOG("Loaded Shaders " + frag + " & " + vert);
 
 	glDeleteShader(vertexShader);
 	glDeleteShader(fragmentShader);

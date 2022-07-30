@@ -24,12 +24,18 @@ public:
 	bool shocking = false;
 	bool lazer = false;
 
+	int shotCount = 1;
+	float range = 3.14/2.f;
+
 	glm::vec2 Dir;
 
 	int damage = 1;
 	float acurracy = 0.01;
 	float shootDistance = 6;
 	float viewDistance = 32;
+	float speed = 0.2f;
+
+	glm::quat rotation = glm::quat();
 
 	Time::Timer shootTimer;
 	float rateOfFire = 2;

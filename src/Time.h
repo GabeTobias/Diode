@@ -22,6 +22,11 @@ namespace Time
 
 	inline double getTime() { return glfwGetTime(); }
 
+	inline int	  getHours(double time = glfwGetTime()) { return int(time / (60.f * 60.f)) % 60; }
+	inline int	  getMinutes(double time = glfwGetTime()) { return int(time / (60.f)) % 60; }
+	inline int	  getSeconds(double time = glfwGetTime()) { return int(time) % 60; }
+	inline double getMillis(double time = glfwGetTime()) { return time - int(time); }
+
 	inline void StartFrame()
 	{
 		frameStartTime = glfwGetTime();
@@ -31,7 +36,7 @@ namespace Time
 	inline void EndFrame()
 	{
 		// wait for end of frame
-		//std::this_thread::sleep_until(next_frame);
+		std::this_thread::sleep_until(next_frame);
 
 		//Second Timer
 		static int second = 0;

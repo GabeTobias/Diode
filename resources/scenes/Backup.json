@@ -627,8 +627,8 @@
             },
             "name": "Player 1",
             "position": [
-                74.52186584472656,
-                -141.4582061767578
+                46.52186584472656,
+                -77.45820617675781
             ],
             "uid": 748,
             "visible": true
@@ -3322,21 +3322,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -4049,13 +4034,10 @@
             "data": {
                 "acurracy": 0.05000000074505806,
                 "damage": 1,
-                "fireRate": 0.20000000298023224,
+                "fireRate": 4.0,
                 "lazer": false,
                 "shocking": false,
                 "shootDistance": 16.0,
-                "shotCount": 1,
-                "shotRange": 1.5700000524520874,
-                "speed": 0.20000000298023224,
                 "viewDistance": 32.0
             },
             "name": "Drone 26",
@@ -4094,13 +4076,10 @@
             "data": {
                 "acurracy": 0.05000000074505806,
                 "damage": 1,
-                "fireRate": 0.20000000298023224,
+                "fireRate": 4.0,
                 "lazer": false,
                 "shocking": false,
                 "shootDistance": 16.0,
-                "shotCount": 1,
-                "shotRange": 1.5700000524520874,
-                "speed": 0.20000000298023224,
                 "viewDistance": 32.0
             },
             "name": "Drone 27",
@@ -4148,21 +4127,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -4197,21 +4161,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -4245,21 +4194,6 @@
             "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -4889,21 +4823,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -4975,21 +4894,6 @@
             "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -5619,21 +5523,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -5667,21 +5556,6 @@
             "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -6310,21 +6184,6 @@
             "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -7599,21 +7458,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -7647,21 +7491,6 @@
             "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -7697,21 +7526,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -7735,7 +7549,7 @@
             },
             "name": "Wall 47",
             "position": [
-                140.0,
+                141.0,
                 -120.5196533203125
             ],
             "uid": 13971,
@@ -7745,21 +7559,6 @@
             "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -7794,21 +7593,6 @@
             "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -8039,21 +7823,6 @@
             "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -8732,18 +8501,15 @@
             "data": {
                 "acurracy": 0.10000000149011612,
                 "damage": 2,
-                "fireRate": 0.20000000298023224,
+                "fireRate": 4.0,
                 "lazer": false,
                 "shocking": false,
                 "shootDistance": 14.0,
-                "shotCount": 1,
-                "shotRange": 1.5700000524520874,
-                "speed": 0.20000000298023224,
                 "viewDistance": 32.0
             },
             "name": "Drone 58",
             "position": [
-                132.0,
+                133.0,
                 -157.0
             ],
             "uid": 24778,
@@ -8777,18 +8543,15 @@
             "data": {
                 "acurracy": 0.10000000149011612,
                 "damage": 2,
-                "fireRate": 0.20000000298023224,
+                "fireRate": 4.0,
                 "lazer": false,
                 "shocking": false,
                 "shootDistance": 14.0,
-                "shotCount": 1,
-                "shotRange": 1.5700000524520874,
-                "speed": 0.20000000298023224,
                 "viewDistance": 32.0
             },
             "name": "Drone 59",
             "position": [
-                153.0,
+                154.0,
                 -157.0
             ],
             "uid": 21974,
@@ -9382,7 +9145,7 @@
             },
             "name": "Room 60",
             "position": [
-                143.0,
+                144.0,
                 -144.0
             ],
             "uid": 22867,
@@ -10078,15 +9841,12 @@
                 "fireRate": 1.0,
                 "lazer": false,
                 "shocking": false,
-                "shootDistance": 10.0,
-                "shotCount": 1,
-                "shotRange": 1.5700000524520874,
-                "speed": 0.20000000298023224,
-                "viewDistance": 21.0
+                "shootDistance": 14.0,
+                "viewDistance": 16.0
             },
             "name": "Drone 64",
             "position": [
-                184.0,
+                181.0,
                 -82.0
             ],
             "uid": 30080,
@@ -10120,18 +9880,15 @@
             "data": {
                 "acurracy": 0.10000000149011612,
                 "damage": 2,
-                "fireRate": 1.0,
+                "fireRate": 3.0,
                 "lazer": false,
                 "shocking": true,
-                "shootDistance": 10.0,
-                "shotCount": 1,
-                "shotRange": 1.5700000524520874,
-                "speed": 0.20000000298023224,
-                "viewDistance": 21.0
+                "shootDistance": 14.0,
+                "viewDistance": 16.0
             },
             "name": "Drone 65",
             "position": [
-                206.0,
+                200.0,
                 -82.0
             ],
             "uid": 1528,
@@ -10168,15 +9925,12 @@
                 "fireRate": 1.0,
                 "lazer": false,
                 "shocking": false,
-                "shootDistance": 10.0,
-                "shotCount": 1,
-                "shotRange": 1.5700000524520874,
-                "speed": 0.20000000298023224,
-                "viewDistance": 21.0
+                "shootDistance": 14.0,
+                "viewDistance": 16.0
             },
             "name": "Drone 66",
             "position": [
-                183.0,
+                180.0,
                 -109.0
             ],
             "uid": 8405,
@@ -10210,18 +9964,15 @@
             "data": {
                 "acurracy": 0.10000000149011612,
                 "damage": 2,
-                "fireRate": 1.0,
+                "fireRate": 3.0,
                 "lazer": false,
                 "shocking": true,
-                "shootDistance": 10.0,
-                "shotCount": 1,
-                "shotRange": 1.5700000524520874,
-                "speed": 0.20000000298023224,
-                "viewDistance": 21.0
+                "shootDistance": 14.0,
+                "viewDistance": 16.0
             },
             "name": "Drone 67",
             "position": [
-                206.0,
+                200.0,
                 -109.0
             ],
             "uid": 27726,
@@ -13652,21 +13403,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -13700,21 +13436,6 @@
             "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -13800,21 +13521,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -13848,21 +13554,6 @@
             "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -13904,21 +13595,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -13953,21 +13629,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -14001,21 +13662,6 @@
             "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -15239,21 +14885,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -15287,21 +14918,6 @@
             "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -15337,21 +14953,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -15385,21 +14986,6 @@
             "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -15435,21 +15021,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -15484,21 +15055,6 @@
             "className": "Wall",
             "comps": [
                 {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
                     "active": true,
                     "className": "Collidable",
                     "data": 0,
@@ -15532,21 +15088,6 @@
             "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -15605,19 +15146,16 @@
             "data": {
                 "acurracy": 0.10000000149011612,
                 "damage": 2,
-                "fireRate": 0.20000000298023224,
+                "fireRate": 2.0,
                 "lazer": true,
                 "shocking": false,
                 "shootDistance": 8.0,
-                "shotCount": 1,
-                "shotRange": 1.5700000524520874,
-                "speed": 0.20000000298023224,
-                "viewDistance": 15.0
+                "viewDistance": 10.0
             },
             "name": "Drone 107",
             "position": [
                 82.61307525634766,
-                -114.54170227050781
+                -109.54170227050781
             ],
             "uid": 1655,
             "visible": true
@@ -15650,19 +15188,16 @@
             "data": {
                 "acurracy": 0.10000000149011612,
                 "damage": 2,
-                "fireRate": 1.0,
+                "fireRate": 2.0,
                 "lazer": false,
                 "shocking": true,
                 "shootDistance": 8.0,
-                "shotCount": 1,
-                "shotRange": 1.5700000524520874,
-                "speed": 0.20000000298023224,
-                "viewDistance": 15.0
+                "viewDistance": 10.0
             },
             "name": "Drone 108",
             "position": [
                 106.50619506835938,
-                -114.5123062133789
+                -109.5123062133789
             ],
             "uid": 31754,
             "visible": true
@@ -15695,19 +15230,16 @@
             "data": {
                 "acurracy": 0.10000000149011612,
                 "damage": 2,
-                "fireRate": 1.0,
+                "fireRate": 2.0,
                 "lazer": false,
                 "shocking": false,
                 "shootDistance": 8.0,
-                "shotCount": 1,
-                "shotRange": 1.5700000524520874,
-                "speed": 0.20000000298023224,
-                "viewDistance": 15.0
+                "viewDistance": 10.0
             },
             "name": "Drone 109",
             "position": [
                 106.51200866699219,
-                -76.51806640625
+                -81.51806640625
             ],
             "uid": 26946,
             "visible": true
@@ -15744,10 +15276,8 @@
                     1,
                     1,
                     1,
-                    0,
-                    0,
-                    0,
-                    0,
+                    1,
+                    1,
                     1,
                     1,
                     1,
@@ -15759,6 +15289,8 @@
                     1,
                     1,
                     1,
+                    1,
+                    1,
                     0,
                     0,
                     0,
@@ -16040,13 +15572,13 @@
                     0,
                     1,
                     1,
-                    0,
                     0,
                     0,
                     0,
                     0,
                     0,
                     1,
+                    1,
                     0,
                     0,
                     0,
@@ -16069,7 +15601,7 @@
                     0,
                     0,
                     0,
-                    0,
+                    1,
                     1,
                     0,
                     0,
@@ -16629,715 +16161,8 @@
         },
         {
             "active": true,
-            "className": "Room",
-            "comps": [],
-            "data": {
-                "height": 24,
-                "tileData": [
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    0,
-                    0,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1
-                ],
-                "width": 24
-            },
-            "name": "Room 121",
-            "position": [
-                95.0,
-                -162.0
-            ],
-            "uid": 6540,
-            "visible": true
-        },
-        {
-            "active": true,
             "className": "Wall",
             "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
-                    "active": true,
-                    "className": "Collidable",
-                    "data": 0,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "className": "Destructable",
-                    "data": {
-                        "maxDamage": 3.0
-                    },
-                    "visible": true
-                }
-            ],
-            "data": {
-                "target": [
-                    0.0,
-                    5.0
-                ],
-                "triggerable": false
-            },
-            "name": "Wall 122",
-            "position": [
-                70.0,
-                -144.0
-            ],
-            "uid": 1881,
-            "visible": true
-        },
-        {
-            "active": true,
-            "className": "Wall",
-            "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
-                    "active": true,
-                    "className": "Collidable",
-                    "data": 0,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "className": "Destructable",
-                    "data": {
-                        "maxDamage": 3.0
-                    },
-                    "visible": true
-                }
-            ],
-            "data": {
-                "target": [
-                    0.0,
-                    5.0
-                ],
-                "triggerable": false
-            },
-            "name": "Wall 123",
-            "position": [
-                89.5,
-                -150.0
-            ],
-            "uid": 18598,
-            "visible": true
-        },
-        {
-            "active": true,
-            "className": "Wall",
-            "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -17360,799 +16185,18 @@
                 ],
                 "triggerable": false
             },
-            "name": "Wall 124",
-            "position": [
-                78.0,
-                -156.5
-            ],
-            "uid": 1344,
-            "visible": true
-        },
-        {
-            "active": true,
-            "className": "Wall",
-            "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
-                {
-                    "active": true,
-                    "className": "Collidable",
-                    "data": 0,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "className": "Destructable",
-                    "data": {
-                        "maxDamage": 3.0
-                    },
-                    "visible": true
-                }
-            ],
-            "data": {
-                "target": [
-                    5.0,
-                    0.0
-                ],
-                "triggerable": false
-            },
-            "name": "Wall 125",
+            "name": "Wall 121",
             "position": [
                 44.0,
                 -120.5
             ],
-            "uid": 16883,
+            "uid": 30714,
             "visible": true
         },
         {
             "active": true,
-            "className": "Bomber",
+            "className": "Turret",
             "comps": [
-                {
-                    "active": true,
-                    "className": "Collidable",
-                    "data": 0,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "className": "Movable",
-                    "data": 0,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "className": "Destructable",
-                    "data": {
-                        "maxDamage": 3.0
-                    },
-                    "visible": true
-                }
-            ],
-            "data": {
-                "accuracy": 0.10000000149011612,
-                "fireDistance": 20.0,
-                "fireRate": 0.5,
-                "heatSeeking": true,
-                "restRate": 3.0,
-                "speed": 0.10000000149011612,
-                "viewDistance": 22.0
-            },
-            "name": "Bomber 126",
-            "position": [
-                94.0,
-                -177.0
-            ],
-            "uid": 12717,
-            "visible": true
-        },
-        {
-            "active": true,
-            "className": "Checkpoint",
-            "comps": [],
-            "data": {
-                "index": 32498
-            },
-            "name": "Checkpoint 127",
-            "position": [
-                74.43547058105469,
-                -141.600830078125
-            ],
-            "uid": 28486,
-            "visible": true
-        },
-        {
-            "active": true,
-            "className": "Drone",
-            "comps": [
-                {
-                    "active": true,
-                    "className": "Collidable",
-                    "data": 0,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "className": "Movable",
-                    "data": 0,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "className": "Destructable",
-                    "data": {
-                        "maxDamage": 1.0
-                    },
-                    "visible": true
-                }
-            ],
-            "data": {
-                "acurracy": 0.10000000149011612,
-                "damage": 2,
-                "fireRate": 1.0,
-                "lazer": false,
-                "shocking": false,
-                "shootDistance": 8.0,
-                "shotCount": 3,
-                "shotRange": 1.5700000524520874,
-                "speed": 0.20000000298023224,
-                "viewDistance": 15.0
-            },
-            "name": "Drone 128",
-            "position": [
-                107.0,
-                -147.0
-            ],
-            "uid": 9860,
-            "visible": true
-        },
-        {
-            "active": true,
-            "className": "Room",
-            "comps": [
-                {
-                    "active": true,
-                    "className": "Collidable",
-                    "data": 0,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "className": "Movable",
-                    "data": 0,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "className": "Destructable",
-                    "data": {
-                        "maxDamage": 1.0
-                    },
-                    "visible": true
-                }
-            ],
-            "data": {
-                "height": 24,
-                "tileData": [
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    0,
-                    0,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1
-                ],
-                "width": 24
-            },
-            "name": "Room 129",
-            "position": [
-                47.0,
-                -192.0
-            ],
-            "uid": 27726,
-            "visible": true
-        },
-        {
-            "active": true,
-            "className": "Wall",
-            "comps": [
-                {
-                    "active": false,
-                    "className": "Triggerable",
-                    "data": {
-                        "bounds": [
-                            4.0,
-                            4.0
-                        ],
-                        "offset": [
-                            2.5,
-                            0.0
-                        ]
-                    },
-                    "visible": false
-                },
                 {
                     "active": true,
                     "className": "Collidable",
@@ -18169,18 +16213,27 @@
                 }
             ],
             "data": {
-                "target": [
-                    5.0,
+                "bulletType": 0,
+                "fireRate": 2.0,
+                "panInterval": 2.0,
+                "panSpeed": 0.10000000149011612,
+                "panning": false,
+                "posA": [
+                    -4.0,
                     0.0
                 ],
-                "triggerable": false
+                "posB": [
+                    4.0,
+                    0.0
+                ],
+                "viewDistance": 10.0
             },
-            "name": "Wall 130",
+            "name": "Turret 122",
             "position": [
-                44.0,
-                -168.52084350585938
+                82.4433822631836,
+                -81.37928009033203
             ],
-            "uid": 19964,
+            "uid": 19949,
             "visible": true
         }
     ]

@@ -19,6 +19,8 @@ Missile::Missile(glm::vec2 pos, glm::vec2 velocity, int damage, World::Entity* t
 	this->position = pos;
 	this->damage = damage;
 
+	Tag("Roomless");
+
 	collider = new Collidable(vec2(0.1));
 	AttachComponent(collider);
 

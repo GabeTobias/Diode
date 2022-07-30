@@ -175,7 +175,7 @@ void Tilemap::Editor()
 		if (removeState && !Input::GetMousebutton(1))
 		{
 			Undo::Store();
-			placeState = false;
+			removeState = false;
 		}
 	}
 

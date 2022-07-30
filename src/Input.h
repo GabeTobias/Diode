@@ -32,6 +32,39 @@ namespace Input
 		return glfwGetMouseButton(window->window, btn) == GLFW_PRESS;
 	}
 
+	inline std::map<int, bool> prevMouseBtnState;
+	inline bool GetMouseButtonDown(int key)
+	{
+		if (prevMouseBtnState.find(key) == prevMouseBtnState.end()) prevMouseBtnState[key] = false;
+
+		if (Input::GetMousebutton(key) && !prevMouseBtnState[key])
+		{
+			//Key Down
+			prevMouseBtnState[key] = Input::GetMousebutton(key);
+			return true;
+		}
+
+		//Key Up
+		prevMouseBtnState[key] = Input::GetMousebutton(key);
+		return false;
+	}
+
+	inline bool GetMouseButtonUp(int key)
+	{
+		if (prevMouseBtnState.find(key) == prevMouseBtnState.end()) prevMouseBtnState[key] = false;
+
+		if (!Input::GetMousebutton(key) && !prevMouseBtnState[key])
+		{
+			//Key Down
+			prevMouseBtnState[key] = !Input::GetMousebutton(key);
+			return true;
+		}
+
+		//Key Up
+		prevMouseBtnState[key] = !Input::GetMousebutton(key);
+		return false;
+	}
+
 	inline bool GetKey(int key)
 	{
 		return glfwGetKey(window->window, key) == GLFW_PRESS;
@@ -53,6 +86,23 @@ namespace Input
 		prevState[key] = Input::GetKey(key);
 		return false;
 	}
+
+	inline bool GetKeyUp(int key)
+	{
+		if (prevState.find(key) == prevState.end()) prevState[key] = false;
+
+		if (!Input::GetKey(key) && !prevState[key])
+		{
+			//Key Down
+			prevState[key] = !Input::GetKey(key);
+			return true;
+		}
+
+		//Key Up
+		prevState[key] = !Input::GetKey(key);
+		return false;
+	}
+
 
 	inline int isController(int controller) 
 	{

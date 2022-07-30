@@ -27,6 +27,7 @@ public:
 
 	bool dashing = false;
 	bool targeting = false;
+	bool megaLazer = false;
 
 	int dashCount = 0;
 	int dashMax = 3;

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <map>
 
 #include "imgui.h"
 #include "imgui_str.h"
@@ -11,88 +12,60 @@ namespace Editor
 	//me to group detech changes in ui. That way I can detect if 
 	//an entire actor has changed rather than each individual item
 
+	/*
+		enum PropType 
+		{
+			CHECKBOX,
+			FLOAT,
+			FLOAT2,
+			FLOAT3,
+			COLOR3,
+			COLOR4,
+			INT,
+			INT2,
+			INTSLIDER,
+			STRING
+		};
+	*/
+
+	struct GroupEditProp
+	{
+		void* srcPtr;
+		bool edited = false;
+	};
+
+	inline std::map<std::string, GroupEditProp> editPropMap;
+
 	//Wheather an Item has Changed
 	inline bool propsChanged = false;
 
 	///////////////////////////////////////////////////////////////////////////
 
-	inline void BeginChangeGroup() 
-	{
-		propsChanged = false;	//Reset the change state
-	}
-
-	inline bool EndChangeGroup() 
-	{
-		return propsChanged;	//Get the change state
-	}
-
+	void BeginChangeGroup();
+	bool EndChangeGroup();
+	
 	///////////////////////////////////////////////////////////////////////////
 
-	inline void CheckBox(std::string str, bool* value) 
-	{
-		ImGui::Checkbox(str.c_str(), value);						//ImGui item
-		propsChanged |= ImGui::IsItemDeactivatedAfterEdit();		//Store item edit
-	}
+	void CheckBox(std::string str, bool* value);
 
 	///////////////////////////////////////////////////////////////////////////
 	
-	inline void Float(std::string str, float* value) 
-	{
-		ImGui::DragFloat(str.c_str(), value);						//ImGui item
-		propsChanged |= ImGui::IsItemDeactivatedAfterEdit();		//Store item edit
-	}
-
-	inline void Float2(std::string str, float* value)
-	{
-		ImGui::DragFloat2(str.c_str(), value);						//ImGui item
-		propsChanged |= ImGui::IsItemDeactivatedAfterEdit();		//Store item edit
-	}
-
-	inline void Float3(std::string str, float* value)
-	{
-		ImGui::DragFloat3(str.c_str(), value);						//ImGui item
-		propsChanged |= ImGui::IsItemDeactivatedAfterEdit();		//Store item edit
-	}
+	void Float(std::string str, float* value);
+	void Float2(std::string str, float* value);
+	void Float3(std::string str, float* value);
 
 	///////////////////////////////////////////////////////////////////////////
 
-	inline void Color3(std::string str, float* value)
-	{
-		ImGui::ColorEdit3(str.c_str(), value);						//ImGui item
-		propsChanged |= ImGui::IsItemDeactivatedAfterEdit();		//Store item edit
-	}
-
-	inline void Color4(std::string str, float* value)
-	{
-		ImGui::ColorEdit4(str.c_str(), value);						//ImGui item
-		propsChanged |= ImGui::IsItemDeactivatedAfterEdit();		//Store item edit
-	}
+	void Color3(std::string str, float* value);
+	void Color4(std::string str, float* value);
 
 	///////////////////////////////////////////////////////////////////////////
 
-	inline void Int(std::string str, int* value) 
-	{
-		ImGui::DragInt(str.c_str(), value);							//ImGui item
-		propsChanged |= ImGui::IsItemDeactivatedAfterEdit();		//Store item edit
-	}
-
-	inline void Int2(std::string str, int* value)
-	{
-		ImGui::DragInt2(str.c_str(), value);						//ImGui item
-		propsChanged |= ImGui::IsItemDeactivatedAfterEdit();		//Store item edit
-	}
-
-	inline void IntSlider(std::string str, int* value, int min, int max)
-	{
-		ImGui::SliderInt(str.c_str(), value, min, max);				//ImGui item
-		propsChanged |= ImGui::IsItemDeactivatedAfterEdit();		//Store item edit
-	}
+	void Int(std::string str, int* value);
+	void Int2(std::string str, int* value);
+	void IntSlider(std::string str, int* value, int min, int max);
 
 	///////////////////////////////////////////////////////////////////////////
 	
-	inline void String(std::string str, std::string* value) 
-	{
-		InputText(str.c_str(), value, 2048, 0, 0);					//ImGui item
-		propsChanged |= ImGui::IsItemDeactivatedAfterEdit();		//Store item edit
-	}
+	void String(std::string str, std::string* value);
 }

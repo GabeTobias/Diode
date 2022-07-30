@@ -15,6 +15,7 @@
 #include "Editor.h"
 #include "Undo.h"
 #include "File.h"
+#include "Log.h"
 
 #include "Pathfinding.h"
 
@@ -31,6 +32,7 @@ namespace Game
 	inline void Init()
 	{
 		Editor::Init();
+		Editor::currentFile = "resources/scenes/test.json";
 		File::LoadScene("resources/scenes/test.json");
 		Undo::Store();
 
@@ -53,6 +55,11 @@ namespace Game
 		if (GameState::Mode == AppState::EditMode)	Editor::UI();
 	}
 
+	inline void StoreGameState() 
+	{
+		prePlayState = File::SerializeScene();
+	}
+
 	inline void Update()
 	{
 		if (Input::GetKeyDown(GLFW_KEY_F4))
@@ -62,8 +69,7 @@ namespace Game
 		{
 			if (GameState::Mode == AppState::EditMode) 
 			{
-				//Store Game state
-				prePlayState = File::SerializeScene();
+				StoreGameState();
 
 				//Start Game Scene
 				World::Start();
@@ -77,7 +83,7 @@ namespace Game
 			}
 
 			//Clear Selection
-			Editor::selectedEntt = nullptr;
+			Editor::selectedEntt.clear();
 		}
 
 		if (Input::GetKeyDown(GLFW_KEY_F5))

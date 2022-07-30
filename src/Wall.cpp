@@ -14,6 +14,11 @@ Wall::Wall()
 	Tag("Obstacle");
 	Tag("Roomless");
 
+	trigger = new Triggerable(vec2(2.5, 0), vec2(4));
+	AttachComponent(trigger);
+	trigger->active = false;
+	trigger->visible = false;
+
 	collider = new Collidable(glm::vec2(1));
 	AttachComponent(collider);
 
@@ -47,7 +52,9 @@ void Wall::Draw()
 		else color = vec4(1, 0, 0.5, 1);
 	}
 
+	Render::useShadow = false;
 	Render::DrawQuad(glm::vec3(position + (direction * (dist / 2.f)), 13), eulerAngles(rotation).z, glm::vec2(1.0f, dist), color);
+	Render::useShadow = true;
 }
 
 void Wall::Update()
@@ -69,24 +76,10 @@ void Wall::Editor()
 
 	Editor::CheckBox("Triggered", &triggerable);
 
-	//Triggerable Toggled
-	if (ImGui::IsItemDeactivatedAfterEdit())
-	{
-		World::Component* trig = GetComponent("Triggerable");
-
-		//Toggle Trigger Component
-		if (triggerable)
-		{
-			trigger = (Triggerable*)AttachComponent(new Triggerable(vec2(2.5, 0), vec2(4)));
-			destruct->active = true;
-		}
-		else
-		{
-			trig->active = false;
-			trig->visible = false;
-			destruct->active = false;
-		}
-	}
+	//Update Trigger
+	trigger->active = triggerable;
+	trigger->visible = triggerable;
+	destruct->active = !triggerable;
 }
 
 nlohmann::json Wall::Save()

@@ -16,6 +16,8 @@ Bullet::Bullet(glm::vec2 pos, glm::vec2 velocity, int damage, float lifetime)
 	this->damage = damage;
 	this->lifetime = lifetime;
 
+	Tag("Roomless");
+
 	collider = new Collidable(vec2(0.5));
 	AttachComponent(collider);
 

@@ -21,11 +21,14 @@
 #include "Killpad.h"
 #include "Breaker.h"
 #include "Dropper.h"
+#include "Bomber.h"
 #include "Wanderer.h"
 #include "Stock.h"
 #include "Graviton.h"
 #include "Ambience.h"
 #include "DashTarget.h"
+#include "LazerPilot.h"
+#include "BulletHell.h"
 
 #include "Destructable.h"
 #include "Triggerable.h"
@@ -50,7 +53,9 @@ namespace File
 		MapConst("Charger", &Charger::Construct);
 		MapConst("Phazer", &Phazer::Construct);
 		MapConst("Dropper", &Dropper::Construct);
+		MapConst("Bomber", &Bomber::Construct);
 		MapConst("Wanderer", &Wanderer::Construct);
+		MapConst("BulletHell", &BulletHell::Construct);
 
 		//Audio Entt Constructor
 		MapConst("Ambience", &Ambience::Construct);
@@ -66,7 +71,7 @@ namespace File
 		MapConst("Breaker", &Breaker::Construct);
 		MapConst("Graviton", &Graviton::Construct);
 		MapConst("DashTarget", &DashTarget::Construct);
-		MapConst("LazerPilot", &DashTarget::Construct);
+		MapConst("LazerPilot", &LazerPilot::Construct);
 	
 		//Component Constructors
 		MapConst("Destructable", &Destructable::Construct);

@@ -7,6 +7,8 @@ class LazerPilot : public World::Entity
 public:
 	bool hasPlayer = false;
 
+	float snapRadius = 3;
+
 public:
 	LazerPilot();
 

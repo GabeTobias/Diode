@@ -70,9 +70,10 @@ void Player::Start() {}
 void Player::Destroy()
 {
 	Checkpoint* check;
-	for(Entity* ent : World::GetEntitiesOfClass("Checkpoint"))
+	std::vector<Entity*> checkpoints = World::GetEntitiesOfClass("Checkpoint");
+	for(Entity* ent : checkpoints)
 	{
-		if (((Checkpoint*)ent)->index == currentCheckpoint) 
+		if (((Checkpoint*)ent)->pointID == currentCheckpoint)
 		{
 			check = (Checkpoint*)ent;
 			break;
@@ -96,6 +97,7 @@ void Player::Editor()
 	Editor::Float("Sensitivity", &sensitivity);
 	Editor::Float("Acceleration", &acceleration);
 	Editor::Float("Drag", &drag);
+	Editor::Int("Checkpoint", &currentCheckpoint);
 }
 
 nlohmann::json Player::Save()
@@ -151,7 +153,7 @@ void Player::Draw()
 		vec2 direct = normalize(playerLazerLocation - position);
 		quat rotation = glm::quatLookAt(vec3(direct, 0), vec3(0, 0, 1));
 
-		Render::DrawQuad(vec3(position + (direct * (dist / 2.f)), 13), eulerAngles(rotation).z, vec2(0.5, dist), vec4(1, 0.5, 0, 1));
+		Render::DrawQuad(vec3(position + (direct * (dist / 2.f)), 13), eulerAngles(rotation).z, vec2(megaLazer ? 1.0:0.5, dist), vec4(1, megaLazer ? 0.0:0.5, 0, 1));
 	}
 }
 
@@ -213,7 +215,7 @@ void Player::Update()
 			if (bulletTimer.getInterval(0.25f))
 			{
 				vec2 direction = normalize(vec2(xInput, yInput));
-				Bullet* b = new Bullet(position + (direction*1.2f),direction*0.6f);
+				Bullet* b = new Bullet(position + (direction*1.f),direction*0.6f);
 				World::AddEntity(b);
 			}
 		}
@@ -353,7 +355,7 @@ void Player::Update()
 
 	//Lazer
 	{
-		if (energy <= 3) playerLazerDepleted = true;
+		if (energy <= 3 && !megaLazer) playerLazerDepleted = true;
 
 		if (!Input::gamePads[0].buttons[GLFW_GAMEPAD_BUTTON_LEFT_BUMPER])
 			playerLazerDepleted = false;
@@ -374,7 +376,7 @@ void Player::Update()
 				{
 					//TODO: Make this variable
 					//Try to find Destructable Component
-					((Destructable*)destruct)->TakeDamage(0.2f);
+					((Destructable*)destruct)->TakeDamage(0.2f * (megaLazer ? 2:1));
 				}
 			}
 
@@ -386,7 +388,8 @@ void Player::Update()
 				playerLazerShooting = true;
 			}
 
-			energy -= 1.25f;
+			if(!megaLazer)
+				energy -= 1.25f;
 		}
 		else playerLazerShooting = false;
 	}

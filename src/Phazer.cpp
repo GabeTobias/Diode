@@ -92,7 +92,11 @@ void Phazer::Draw()
 
 	//Draw Lazer
 	if (shooting && active)
+	{
+		Render::useShadow = false;
 		Render::DrawQuad(vec3(position + (direct * (dist / 2.f)), 13), eulerAngles(rotation).z, vec2(0.5, dist), vec4(1, 0.5, 0, 1));
+		Render::useShadow = true;
+	}
 }
 
 void Phazer::Editor()

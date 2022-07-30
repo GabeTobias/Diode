@@ -15,6 +15,7 @@
 #include "Props.h"
 #include "Manip.h"
 
+#include "File.h"
 #include "Time.h"
 #include "GUI.h"
 

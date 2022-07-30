@@ -4,6 +4,7 @@
 
 #include "Game.h"
 #include "File.h"
+#include "Log.h"
 
 #include "Player.h"
 #include "Coords.h"

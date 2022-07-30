@@ -143,7 +143,9 @@ namespace World
 
 	inline void AddEntity(Entity* entity)
 	{
-		entity->uid = GenerateUID();
+		if(entity->uid == -1)
+			entity->uid = GenerateUID();
+		
 		entity->name = entity->className + " " + std::to_string(entities.size());
 		entities.push_back(entity);
 		entity->Awake();

@@ -93,16 +93,32 @@ void Drone::Update()
 	if (inRange)
 		rigidbody->velocity = lerp(rigidbody->velocity, vec2(0), 0.1f);
 	else 
-		rigidbody->velocity = normalize(lerp(rigidbody->velocity, Dir, acurracy)) * 0.2f;
+		rigidbody->velocity = normalize(lerp(rigidbody->velocity, Dir, acurracy)) * speed;
 
 	//Shooting Bullet
 	if (inRange && info && !lazer)
 	{
 		if (shootTimer.getInterval(rateOfFire)) 
 		{
-			Bullet* b = new Bullet(position + Dir * 2.5f, Dir * 0.3f, damage);
-			b->shocking = shocking;
-			World::AddEntity(b);
+			if (shotCount > 1)
+			{
+				int bounds = int(shotCount / 2.f);
+				for (int i = -bounds; i < ((shotCount % 2 == 0) ? bounds:bounds+1); i++)
+				{
+					float tau = (range / float(shotCount)) * i;
+					vec2 direction = glm::rotate(Dir, tau);
+
+					Bullet* b = new Bullet(position + direction * 2.5f, direction * 0.3f, damage);
+					b->shocking = shocking;
+					World::AddEntity(b);
+				}
+			}
+			else 
+			{
+				Bullet* b = new Bullet(position + Dir * 2.5f, Dir * 0.3f, damage);
+				b->shocking = shocking;
+				World::AddEntity(b);
+			}
 		}
 	}
 	 
@@ -135,7 +151,6 @@ void Drone::Draw()
 {
 	bool inRange = distance(position, target->position) < viewDistance;
 
-	static quat rotation = quat();
 	if(inRange && active) rotation = glm::quatLookAt(vec3(Dir, 0), vec3(0, 0, 1));
 	
 	Render::DrawTri({ position.x, position.y, 10 }, eulerAngles(rotation).z, vec2(1), vec4((shocking)? 1.0:0.5, (lazer) ? 0.5 : 0.1, 1.0, (active) ? 1:0.5));
@@ -158,8 +173,11 @@ void Drone::Draw()
 
 void Drone::Editor()
 {
-	ImGui::Text("Target UID: "); ImGui::SameLine();
-	ImGui::TextColored(ImVec4(1,1,1,0.25),std::to_string(target->uid).c_str());
+	if (Editor::isRootSelection(this))
+	{
+		ImGui::Text("Target UID: "); ImGui::SameLine();
+		ImGui::TextColored(ImVec4(1, 1, 1, 0.25), std::to_string(target->uid).c_str());
+	}
 
 	Editor::Int("Damage", &damage);
 	Editor::Float("Accuracy", &acurracy);
@@ -167,8 +185,13 @@ void Drone::Editor()
 	Editor::Float("Fire Distance", &shootDistance);
 	Editor::Float("Fire Rate", &rateOfFire);
 
+	Editor::Float("Speed", &speed);
+
 	Editor::CheckBox("Shocking", &shocking);
 	Editor::CheckBox("Lazer", &lazer);
+
+	Editor::Int("Shot Count", &shotCount);
+	Editor::Float("Shot Range", &range);
 }
 
 nlohmann::json Drone::Save()
@@ -182,6 +205,9 @@ nlohmann::json Drone::Save()
 	data["fireRate"] = rateOfFire;
 	data["shocking"] = shocking;
 	data["lazer"] = lazer;
+	data["speed"] = speed;
+	data["shotCount"] = shotCount;
+	data["shotRange"] = range;
 
 	return data;
 }
@@ -193,6 +219,9 @@ void Drone::Load(nlohmann::json data)
 	if (data.contains("shootDistance")) shootDistance = data["shootDistance"].get<float>();
 	if (data.contains("viewDistance")) viewDistance = data["viewDistance"].get<float>();
 	if (data.contains("fireRate")) rateOfFire = data["fireRate"].get<float>();
+	if (data.contains("speed")) speed = data["speed"].get<float>();
 	if (data.contains("shocking")) shocking = data["shocking"].get<bool>();
 	if (data.contains("lazer")) lazer = data["lazer"].get<bool>();
+	if (data.contains("shotCount")) shotCount = data["shotCount"].get<int>();
+	if (data.contains("shotRange")) range = data["shotRange"].get<float>();
 }
